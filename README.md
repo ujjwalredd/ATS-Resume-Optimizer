@@ -2,6 +2,8 @@
 
 AI-powered tool that automatically optimizes LaTeX resumes based on job descriptions. Analyzes your profile from GitHub, LinkedIn, and Google Scholar, then intelligently rewrites resume bullets to match job requirements while maintaining factual accuracy.
 
+![Dashboard](dashboard.png)
+
 ## Features
 
 - URL Extraction: Extract job descriptions directly from LinkedIn, Indeed, Glassdoor URLs
@@ -28,6 +30,8 @@ cp config.yaml.example config.yaml
 ### Usage
 
 #### Option 1: Web Dashboard (Recommended)
+
+![Dashboard](dashboard.png)
 
 ```bash
 streamlit run dashboard.py
