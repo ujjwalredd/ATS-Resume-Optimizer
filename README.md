@@ -31,8 +31,6 @@ cp config.yaml.example config.yaml
 
 #### Option 1: Web Dashboard (Recommended)
 
-![Dashboard](dashboard.png)
-
 ```bash
 streamlit run dashboard.py
 ```
