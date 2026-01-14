@@ -1,0 +1,44 @@
+# Configuration file for ATS Resume Optimizer
+# Copy this to config.yaml and fill in your details
+
+# API Keys
+openai:
+  api_key: "your-openai-api-key-here"
+
+github:
+  token: "your-github-token-here"
+  username: "your-github-username"
+
+# LinkedIn credentials (for web scraping)
+linkedin:
+  email: "your-email@example.com"
+  password: "your-password"  # Consider using environment variables instead
+
+# Repository settings
+repository:
+  owner: "your-github-username"
+  name: "Resume_AI"  # or your resume repo name
+  resume_file: "main.tex"
+  branch: "main"
+
+# Embedding settings
+embeddings:
+  model: "all-MiniLM-L6-v2"  # Fast and efficient, good for this use case
+  vector_db_path: "embeddings_db"
+
+# OpenAI settings
+openai_settings:
+  model: "gpt-4o-mini"  # Default for parsing and rewriting. Options: "gpt-4o-mini" (cheaper), "gpt-4-turbo-preview", "gpt-3.5-turbo"
+  temperature: 0.3
+  max_tokens: 500
+
+# Analysis thresholds
+analysis:
+  similarity_threshold: 0.6  # Minimum similarity for relevance
+  rewrite_threshold: 0.4  # Below this, bullet is de-emphasized or removed
+  keep_threshold: 0.75  # Above this, bullet is kept as-is
+
+# Output settings
+output:
+  output_dir: "output"
+  json_output: "analysis_results.json"
