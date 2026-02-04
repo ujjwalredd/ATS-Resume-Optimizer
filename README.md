@@ -20,7 +20,7 @@ AI-powered tool that automatically optimizes LaTeX resumes based on job descript
 ### Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ujjwalredd/ATS-Resume-Optimizer.git
 cd Resume_AI
 pip install -r requirements.txt
 cp config.yaml.example config.yaml
